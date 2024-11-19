@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.barra-navegacion {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(255, 30, 53);
+    padding: 1em 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+
+}
+
+.menu-navegacion {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    
+}
+
+.menu-navegacion a {
+    background-color: rgb(255, 30, 53);
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: bold;
+}
+
+.menu-navegacion a:hover {
+    background-color: rgb(255, 30, 53);
+    border-radius: 4px;
+}
+
+.desplegable {
+    position: relative;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(255, 30, 53);
+    list-style-type: none;
+    padding: 0;
+    min-width: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sub-menu li {
+    width: 100%;
+}
+
+.sub-menu li a {
+    display: block;
+    padding: 8px 16px;
+    color: rgb(255, 255, 255);
+}
+
+.sub-menu li a:hover {
+    background-color: rgb(255, 30, 53);
+}
+
+.desplegable:hover .sub-menu {
+    display: block;
+}
+
+.principal {
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.principal h1 {
+    font-size: 2.5em;
+    color: rgb(8, 8, 8);
+    margin-bottom: 20px;
+    width: 100%;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.contenedor-imagen {
+    max-width: 45%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.imagen-principal {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.imagen-principal:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.texto-descriptivo {
+    margin-top: 10px;
+    color: cadetblue;
+    font-size: 1em;
+}
+
+.seccion-productos {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion-productos h2 {
+    font-size: 2em;
+    color: rgb(255, 30, 53);
+    margin-bottom: 20px;
+}
+
+.contenido-seccion {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+}
+
+.imagen-seccion {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.imagen-seccion:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.seccion-productos p {
+    font-size: 1.2em;
+    color:#555;
+    max-width: 600px;
+    margin: 0px auto;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.pie-pagina {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    margin-top: 3rem;    
+}
+
+.contenido-pie {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.contenido-pie h3 {
+    color: rgb(255, 30, 53);
+    margin-bottom: 1rem;
+}
+
+.contenido-pie p {
+    color: white;
+}
+
+.secciones {
+    padding: 20px 20px;
+    background-color: white;
+    text-align: center;
+    border-bottom: 3px solid rgb(165, 11, 11);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secciones p {
+    padding: 20px;
+    text-align: justify;
+    font-size: 20px;
+
+}
+
+.secciones2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 80%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    padding: 70px;
+}
+
+  
+.imagen-seccion {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+}
+
+.imagen-seccion:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    text-align:center;
+    padding: 1em;
+}
+
+.campo.genero {
+    display: flex;
+    flex-direction: row;
+}
+
+.campo label {
+    color: rgb(255, 255, 255);
+    margin: 5px;
+    font-size: 1em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.campo input {
+    padding: .5rem 1rem;
+    width: full;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 15px 15px rgba(97, 1, 1, 0.2);
+    border-radius: 15px;
+    background-color: rgb(240, 17, 17);
+
+}
+
+.button {
+    padding: 10px;
+    margin: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    color: rgb(255, 0, 0);
+}
+
+.button:hover {
+    background-color: rgb(255, 109, 109);
+}
+
+.contenido-unete {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 0 1rem;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.imagen-unete {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.formulario-unete {
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    box-shadow: 5px 15px 15px rgba(97, 1, 1, 0.2);
+    border-radius: 15px;
+    background-color: rgb(240, 17, 17);
+    width: 120%;
+}
+
+.prueba {
+    display: flex;
+    flex-direction: column;
+  
+    align-content: center;
+}
+
+.campo-unete  {
+    display: flex;
+  flex-direction: column;
+}
+
+.formulario-unete h2 {
+    color: white;
+    margin-top: 10px;
+}
+
+.campo-unete label {
+    color: rgb(255, 255, 255);
+    margin: 5px;
+    font-size: 1em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.campo-unete input {
+    padding: .5rem 1rem;
+    width: full;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+
+}
+
+.button-unete {
+    padding: 15px;
+    margin: 20px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    color: rgb(255, 0, 0);
+    font-size: 1.2rem;
+}
+
+
+
+.unete h2 {
+    text-align: center;
+}
