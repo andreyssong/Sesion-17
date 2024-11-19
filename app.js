@@ -1,3 +1,20 @@
+const formularioUnete = document.getElementById('formularioUnete').addEventListener('submmit', function (e) {
+        e.preventDefault();
+    
+const nombreUnete = document.getElementById('nombreUnete').value.trim();
+const correoUnete = document.getElementById('correoUnete').value.trim();
+const descripcionUnete = document.getElementById('descripcionUnete').value.trim();
+
+if (!nombreUnete || !correoUnete || !descripcionUnete) {
+    alert('Por favor, completa todos los campos.');
+    return;
+}
+
+alert('Formulario enviado con éxito, ¡Gracias por postularte!');
+});
+
+else {
+
 document.getElementById('submmitButtom').addEventListener('click', function (e) {
 
     const nombre = document.getElementById('nombre').value.trim();
@@ -20,5 +37,5 @@ document.getElementById('submmitButtom').addEventListener('click', function (e) 
     return;
     }
     alert('Formulario enviado correctamente.');
-    });
+})}
     
